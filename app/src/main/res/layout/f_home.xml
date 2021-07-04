@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.andreiiefimenko.cookbook.screens.home.HomeViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp">
+
+        <LinearLayout
+            android:id="@+id/h_cont_one"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/h_btn_one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="2"
+                android:text="SOME TEXT"
+                android:background="#7C4DFF"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/h_btn_two"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="SOME TEXT"
+                android:layout_weight="3"
+                android:background="#64FFDA"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/h_cont_two"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/h_cont_one">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/h_btn_three"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text="SOME TEXT"
+                android:background="#FF6E40" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/h_btn_four"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_weight="2"
+                android:text="SOME TEXT"
+                android:background="#40C4FF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/h_cont_three"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/h_cont_two">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/h_btn_five"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:text="SOME TEXT"
+                android:background="#FFFF00" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/h_btn_six"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:text="SOME TEXT"
+                android:background="#FF5252" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/h_cont_four"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/h_cont_three">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/h_btn_seven"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="4dp"
+                android:text="SOME TEXT"
+                android:background="#E040FB" />
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
